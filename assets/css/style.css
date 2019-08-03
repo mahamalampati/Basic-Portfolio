@@ -15,7 +15,7 @@ a
 
 }
 
-.full{
+.row{
 
   width: 100%;
   margin-bottom: 70px;
@@ -23,25 +23,31 @@ a
 }
 
 
-#header {
+.header {
   font-family:  'Georgia', Times, Times New Roman, serif;
   width: 960px;
   margin: 0 auto;
 }
 
 
-#header > header {
+.header > header {
   font-family:  'Georgia', Times, Times New Roman, serif;
   display: inline-block;
   color: white;
   background-color: teal;
   font-size: 50px;
+  margin-left: 150px;
 }
 
-#menu {
- font-size: 20px;
- float: right;
-}
+.menu {
+  float: right;
+  margin-top: 25px;
+  }
+
+  .navbar-brand{
+    color: #999;
+    text-decoration: none;
+   }
 
 h1{
   font-family:  'Georgia', Times, Times New Roman, serif;
@@ -77,9 +83,9 @@ h1{
 }
 
 #content{
-
+  
   padding:0.8em;
-  margin-right:1.0em;
+  
 }
 
 ul{
@@ -222,3 +228,106 @@ margin-top:1.0em;
   left: 50%;
   transform: translate(-50%, -50%);
 }
+
+
+
+@media screen and (max-width: 640px){
+
+ 
+  
+  .full{
+  
+  background: none;
+  
+  }
+    .header{
+      
+      display:inline-block;
+       width:100% !important;
+       text-align:center;
+       background:teal;
+       
+     
+  
+    }
+  
+    .header>header{
+  
+     margin-left: -140px !important;
+  
+    }
+  .menu{
+  
+    text-align: center;
+    width:100% !important;
+    background: white;
+    padding:30px;
+    
+    
+  }
+
+  
+#imageDiv{
+
+  float: left;
+  padding: 1.0em;
+  margin-top: 1.5em;
+  margin-left: 1.0em;
+  width:100%;
+  
+}
+
+#content{
+  
+  padding:0.8em;
+  width:100%;
+  
+}
+  
+  footer{
+  
+    width:100% !important;
+  }
+    
+  }
+  
+  @media screen and (max-width: 768px){
+  
+    .container{
+  
+    width:600px !important;
+    height:700px;
+  }
+ 
+  }
+  
+  @media screen and (max-width: 980px){
+  
+    body{
+  
+      width:980px;
+    }
+  
+  
+    
+  
+   .container{
+  
+    width: 500px;
+    margin-left:120px;
+  
+   }
+  
+   .form-control{
+  
+  
+    width:400px;
+  
+   }
+   .btn{
+  
+    margin-left:20px;
+  
+   }
+    
+  }
